@@ -1,0 +1,19 @@
+
+
+Overview
+
+I had trouble with freezes when trying to use waves to set presets/scenes, so i modified monosynth
+(it has less going on, so it does not freeze)
+
+
+
+Notes
+
+(20211023)
+
+- It seems like the original monosynth was meant to be controlled by an envelope, BUT i just wanted a 
+  basic 1 voice osc to play arround with, so i bypassed myEnv and just sent the output straight to 
+  out[0].
+
+- I also figured out that (even though the original used saw_polyblep) you can use square_polyblep
+  because square and saw have the same number of inputs (see monosynth.c)
