@@ -185,7 +185,11 @@ u32 module_get_num_params(void) {
 // ( bad, i know, see github issues list )
 void module_process_frame(void) { 
 
-  double si = TWO_PI(440/44100);
+  //for ring mod.
+  //below (commneted out) is original
+  //double si = TWO_PI(440/44100);
+  
+
   //--- process slew
 
   // 
@@ -251,9 +255,12 @@ void module_process_frame(void) {
   //out[0] = sub_fr1x32( in[0], wShape );
   
   //for ring mod
-  float sine = sin(phase);
-  out[0] = in[0] * sine;
-  phase += si;
+  //float sine = sin(phase);
+  //out[0] = in[0] * sine;
+  //phase += si;
+  //
+
+  out[0] = mult_fr1x32x32(in[0], in[1]);
   
   out[1] = 0;
   out[2] = 0;
