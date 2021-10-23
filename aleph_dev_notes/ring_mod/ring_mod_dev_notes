@@ -14,6 +14,16 @@ OR
 
 Progress
 
+(20211023)
+
+- i got something like the second crummy diagram above working now!
+
+- you can put it two inputs and multiply them together w/ bfin intrinsic 
+
+- i dont know if it is real ring mod, but it sounds like ring mod!
+  (you can change one of the inputs to human voice to get some like modemix-type sound!)
+
+
 (20211009)
 
 - basically i used the code from the audio programming book, and it seems to work
