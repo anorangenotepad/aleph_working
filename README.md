@@ -1,5 +1,7 @@
 # aleph_working
 This is for (the really crummy) working versions of programs I create for aleph
 
-Since these are just working versions, I dont change mod/file names
-(since mix is used as a template for shaper-like and ring-mod-like modules, they will both complie as mix.)
+The ones on the first level should (mostly) work and most of them are covered in the series of videos
+I am working on for Aleph on my YouTube channel
+
+The ones in not working yet still have some issues...
