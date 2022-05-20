@@ -1,0 +1,16 @@
+
+WORKS! (2022-05-20)
+
+BUT!
+1) svf acting a bit funny (i.e. need to adjust filter cutoff before sound starts...)
+2) probably need slew over svf controls (cutoff and rq) to smooth transitions
+   (the mix.c example works, but see lines.c, too)
+3) i dont really know how to control lines delay... that is a user issue, though.
+4) i think this is pushing cpu a bit, so the next item should be working on wavetables
+   non-wavetable voices probably eat A TON of cpu...
+
+
+right now, compiles (2022-05-18)
+BUT!
+not routed though delay yet!
+routing is tricky due to somewhat tricky routing of original lines
