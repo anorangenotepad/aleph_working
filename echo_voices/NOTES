@@ -1,0 +1,32 @@
+
+WORKS BETTER! (2022-05-23)
+
+1) I think svf issues fixed BUT this whole thing might have just been 
+   my imagination due to the way lines works. (lines is awesome!)
+   ..if not, just try adjusting the filter cutoff after loading 
+   echo_voices.c. using dry (out [0], [1]) as ref also good.
+2) slew over svf controls accomplished (lines.c used as example)
+3) lines is a delay/looper, and by turing write on/off you can
+   get some fun looper pedal action! (MIDICC to control?)
+4) i set voice amps to 0 (0x00000000) by default, and they can be
+   activated by routing note velocity in MIDINOTE to a MUL with 
+   a MUL/B value of about 28119 (approx -4... needs more vol for tri)
+5) I still think this is cpu heavy, and (hopefully) getting 
+   wavetables figured out will allow me to mitigate some of this...
+
+
+WORKS! (2022-05-20)
+
+BUT!
+1) svf acting a bit funny (i.e. need to adjust filter cutoff before sound starts...)
+2) probably need slew over svf controls (cutoff and rq) to smooth transitions
+   (the mix.c example works, but see lines.c, too)
+3) i dont really know how to control lines delay... that is a user issue, though.
+4) i think this is pushing cpu a bit, so the next item should be working on wavetables
+   non-wavetable voices probably eat A TON of cpu...
+
+
+right now, compiles (2022-05-18)
+BUT!
+not routed though delay yet!
+routing is tricky due to somewhat tricky routing of original lines
