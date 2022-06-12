@@ -1,0 +1,25 @@
+
+20220611
+
+surprisingly(!) it does kind of work
+but some problems
+(1) VERY quiet
+    - no sound with base eParam settings
+    - need to turn physical out knob on aleph front panel all the way up (a sign of trouble...)
+    - need to turn both amps all the way up (to 0)
+    - then need to adjust Hz up till start to hear it
+			- does go silent at higher frequencies, but probably due to volume issues.
+
+(2) Tune does nothing
+    - not that i can tell anyway
+
+(3) amp0 actually controlls Hz(?)
+    - this is just weird, but you can mess around with amp0 setting to see what i mean
+
+(4) general oddness
+    - since this is a pretty rough hack ( i didnt expect it to work at all)
+      i think i am missing some of the nuances
+    - the original rawsc actually just appears to cascade the functions, so the 
+      equivalent(?) of module_process_frame is not void and recieves the idx from above
+      as input
+    
