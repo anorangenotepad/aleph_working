@@ -345,3 +345,4 @@ void module_set_param(u32 idx, ParamValue v) {
 			break;
 	}
 }
+
